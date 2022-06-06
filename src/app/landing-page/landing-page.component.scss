@@ -1,0 +1,15 @@
+.row {
+    display: flex;
+    height: 40px;
+    border-bottom: 1px solid;
+    justify-content: center;
+    .name,
+    .id {
+        display: flex;
+        flex: 1;
+        align-items: center;
+    }
+    .name {
+        border-right: 1px solid;
+    }
+}

@@ -1,0 +1,15 @@
+<div class="login">
+     <input type="text" placeholder="Email" [formControl]="userNameControl">
+    <input type="password" placeholder="Password" [formControl]="passwordControl">
+    <button [disabled]="!userNameControl.valid || !passwordControl.valid" (click)="login()">login</button>
+</div>
+
+<div *ngIf="isMatched==='NOT_MATCHED'" class="alert">
+    <span (click)="close()">
+       x
+    </span>
+    <div class="overlay"></div>
+    <div class="alert-modal">
+        Please Enter Valid UserName and Password
+    </div>
+</div>

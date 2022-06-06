@@ -1,0 +1,51 @@
+.login {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    input {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+}
+
+.alert {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    span {
+        position: absolute;
+        z-index: 999999;
+        top: 15px;
+        right: 25px;
+        cursor: pointer;
+    }
+    .overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0.8;
+        z-index: 1;
+        background: #ccc;
+    }
+    .alert-modal {
+        width: 250px;
+        height: 57px;
+        border: 1px solid;
+        border-radius: 5px;
+        background: red;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        z-index: 9999;
+    }
+}
